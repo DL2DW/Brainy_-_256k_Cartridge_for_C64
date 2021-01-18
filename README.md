@@ -6,9 +6,7 @@ This is a replica of a 256kByte EPROM card for the Commodore C64.
 
 The magazine "64er" summarized the whole thing in its conclusion as follows:
 
-```
-Brainy is a new generation EPROM module card. In contrast to the module cards presented so far, every EPROM memory space is used. Brainy is recommended to any beginner or advanced user who is tired of waiting an eternity for loading longer programs from floppy disk. The included floppy disk contains a very clear module generator, which automatically makes all the necessary settings for the card.
-```
+###### Brainy is a new generation EPROM module card. In contrast to the module cards presented so far, every EPROM memory space is used. Brainy is recommended to any beginner or advanced user who is tired of waiting an eternity for loading longer programs from floppy disk. The included floppy disk contains a very clear module generator, which automatically makes all the necessary settings for the card.
 
 
 
