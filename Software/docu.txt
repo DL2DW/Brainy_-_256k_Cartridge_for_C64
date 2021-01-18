@@ -1,0 +1,40 @@
+In step 1 eprom types are selected, which is self-explanatory.
+(The 27256s sometimes have a quirk; some have some continuity between pin 28 (5V) and pin 1 (Vpp). When using a 27512
+pin 1 is not hardwired to 5V, but is the A15 of the 27512 and connected to the D register (741LS174).
+This can (must not) lead to problems with the voltage level of the low signal, which is with 0.8Volt higher than 0.4Volt and is at the limit of the
+voltage level which defines logical zero. So you should check the 27256s if they are "high impedance" between pin 28 and pin 1 or use 27512s only).
+
+In step 2 the base address can be changed. Jumper J1 and J2 is the IO area $DE00, $DF00 and self-explanatory.
+Jumpers J3, J4, J5, J6 are XOR-gated with A4, A5, A6, A7 respectively and determine the range in $10 increments, i.e. $DE00, $DE10, etc.
+
+Step 3 Selection of the drive with SPACE and SHIFT RETURN
+
+Step 4 Select the programs from the source disk.
+The programs which should be on the module are moved from the left to the right side with RETURN.
+Confirm the selection with SHIFT RETURN. The generator then checks if the eprom space is sufficient.
+If the next source disk is requested but you don't want to have any more programs, you have to cancel with the ARROW LEFT key (top left).
+
+Step 5. then FILES ON EPROM appears and you have to move files from left to right again. With CURSORRIGHT CURSORLINKS
+you can switch between OLD and NEW and with CURSEROBEN CURSERUNTEN and RETURN you can change the order.
+
+Step 6: Then the selection of the start addresses appears. With SPACE you enter the editing mode. With RETURN the input is accepted.
+Programs which start at $8000 and are provided with module start are started with SYS 64738, i.e. $FCE2.
+At the same time, F2 to F6 can be used to change the block graphic, frame color, background color, bar color,
+font color. Terrible combinations are possible here.
+
+Step 7. eprom files are created, instructions are shown below.
+---------------------------------------------------------------------------------------------------------------------
+The populated module is started by pressing a key.
+
+CURSOR up/down is used to scroll. F1 and F7 scroll one page.
+
+SPACE loads a program without starting it, programs with autostart ( greater $00FF less $0400) must be started with SPACE.
+
+RETURN loads and starts a program.
+
+RUN/STOP switch off BRAINY.
+
+RESTORE triggers a conventional reset, module start programs ($8000) are started automatically.
+
+SHIFT is only effective in conjunction with one of the functions described above. It restores the program currently in memory (OLD function).
+
