@@ -1,6 +1,6 @@
 # BRAINY - 256K Cartridge for Commodore C64
 
-![](https://github.com/DL2DW/Brainy_-_256k_Cartridge_for_C64/blob/main/Images/DC12V-2A.jpg)
+![](https://github.com/DL2DW/Brainy_-_256k_Cartridge_for_C64/blob/main/Images/Brainy_Cartridge.jpg)
 
 This is a replica of a 256kByte EPROM card for the Commodore C64. 
 
